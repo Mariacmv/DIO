@@ -1,0 +1,52 @@
+def criar_treino(biotipo, tempo, preferencia, objetivo, restricao):
+    treino = ""
+
+    if biotipo.lower() == "ectomorfo":
+        treino += "\nFoco em treino de força com mais volume para ganho muscular."
+    elif biotipo.lower() == "mesomorfo":
+        treino += "\nTreino equilibrado entre força e resistência."
+    elif biotipo.lower() == "endomorfo":
+        treino += "\nTreino com foco em queima de gordura e resistência."
+
+    if tempo == "3 vezes":
+        treino += "\nPlano de treino 3 vezes por semana, focando em treino total do corpo."
+    elif tempo == "5 vezes":
+        treino += "\nPlano de treino 5 vezes por semana, com foco em divisão de grupos musculares."
+    else:
+        treino += "\nPlano de treino personalizado de acordo com sua disponibilidade."
+
+    if preferencia.lower() == "força":
+        treino += "\nFoco em exercícios compostos como agachamentos e supino."
+    elif preferencia.lower() == "cardio":
+        treino += "\nFoco em exercícios aeróbicos e treinos de resistência."
+    elif preferencia.lower() == "funcional":
+        treino += "\nTreino funcional com movimentos de alta intensidade."
+
+    if objetivo.lower() == "ganho muscular":
+        treino += "\nPlano de treino voltado para hipertrofia com altas cargas."
+    elif objetivo.lower() == "perda de gordura":
+        treino += "\nPlano com foco em queima calórica e resistência."
+    elif objetivo.lower() == "melhora de resistência":
+        treino += "\nPlano de treino com foco em resistência muscular e aeróbica."
+
+    if restricao:
+        treino += f"\nConsideramos sua restrição: {restricao}. Faremos ajustes para evitar lesões."
+
+    return treino
+
+def main():
+    print("Olá! Vamos criar um treino personalizado para você.")
+    
+    biotipo = input("Qual o seu biotipo corporal? (Ectomorfo, Mesomorfo, Endomorfo): ")
+    tempo = input("Quantas vezes por semana você pode treinar? (Exemplo: 3 vezes, 5 vezes): ")
+    preferencia = input("Quais exercícios você prefere? (Força, Cardio, Funcional): ")
+    objetivo = input("Qual é o seu objetivo principal? (Ganho muscular, Perda de gordura, Melhora de resistência): ")
+    restricao = input("Você tem alguma restrição de treino? (Exemplo: Lesão no joelho, ou nenhuma): ")
+
+    treino = criar_treino(biotipo, tempo, preferencia, objetivo, restricao)
+
+    print("\nAqui está o seu treino personalizado:")
+    print(treino)
+
+if __name__ == "__main__":
+    main()
