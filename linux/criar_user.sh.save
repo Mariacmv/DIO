@@ -1,0 +1,6 @@
+#!/bin/bash
+
+useradd guest10 -c "Usuário convidado" -s /bin/bash -m -p $(openssl passwd 6 Senha123)
+passwd guest10 -euseradd guest10 -c "Usuário convidado" -s /bin/bash -m -p $(openssl passwd 6 Se>
+passwd guest10 -e
+
