@@ -1,0 +1,42 @@
+# Engenharia de Prompt e AWS Step Functions
+
+## O que é Engenharia de Prompt?
+ É o processo de criar e otimizar instruções textuais que orientam o comportamento de modelos de linguagem para gerar respostas úteis e precisas.
+
+# A IA generativa no mundo
+ É uma tecnologia que está revolucionando vários aspectos do mundo atualmente através de algoritmos avançados. Estão presentes em áreas como: marketing e publicidade, sendo capaz de criar, 
+ por exemplo, publicações com base no comportamento dos usuários; criação de arte e design e, até mesmo animações; de jogos, como o "This Girl Does Not Exist", música; simulação científica,
+ previsões climáticas; na educação, sendo capaz de atuar como um tutor ou para criar material didático, por exemplo; fornecendo relatórios médicos ou dando assistência médica virtual; 
+ automação de processos para empresas ou análise de dados eficiente; codificação automatizada e a criação de aplicações inteligentes.
+
+# Impacto da IA em diversas áreas do mundo
+ Economicamente, vem impulsionando o mercado ao automatizar processos aumentando a eficiência, criando novas áreas de trabalho promovendo novas oportunidades como no desenvolvimento de algoritmos 
+ de automação. Porém, isso também dá abertura ao aumento do desemprego por substituição ou desqualificação, além da persistência dos subempregos. Na área da saúde, a IA permite diagnósticos mais 
+ rápidos e precisos, colaborando para a adoção de tratamentos antecipados e individuais. Também democratiza o acesso à saúde através de sistemas automatizados que geram diagnósticos para os mais
+ necessitados. Na educação, auxilia estudantes a esclarecer dúvidas em tempo real, ensinar de forma eficaz e automatizar processos administrativos em escolas e universidades. Na indústria, a IA      
+ está sendo capaz de prever situações ou promover análises de qualidade; no meio ambiente, na segurança cibernética e em trabalhos policiais, na sociedade eticamente e em governos.
+
+## Processamento de linguagem neural - NLP com redes neurais
+ Fundamentos: Redes Neurais -> é uma das principais arquiteturas utilizadas atualmente que aprendem com o contexto, não de forma isolada.
+              Embeddings -> vetores numéricos que forma convertidos de textos para serem processados por redes neurais
+              Arquitetura Transformers -> é um modelo que foca em partes importantes e, dessa forma, permite o processamento de uma grande quantidade de informações
+
+## Engenharia de Prompt - Fundamentos
+ Prompt -> é a entrada de um texto, uma instrução que definirá o comportamento da resposta da IA. Sua estrutura modela a qualidade da resposta através de técnicas como:
+          * instruções explícitas, simples e claras
+          * exemplos e contextos
+
+## O que é AWS Step Functions?
+ É uma função da AWS que permite orquestrar vários serviços da AWS em fluxos de trabalhos visuais. Além de construir pipelines de processamento de dados, automação de tarefas e integrações
+ de serviços de maneira escalável e gerenciada.
+
+# Benefícios
+ Escalabilidade: permite a criação de fluxos de trabalho complexos sem provisionar infraestrutura
+ Visibilidade: a interface da AWS é interativa e intuitiva
+ Facilidade de Integração: integra facilmente com outros serviços AWS como Lambda
+
+## Criação de prompts com AWS Step Functions
+ 1: criar um diagrama de estados para modelar as etapas (cada uma terá uma função específica) do fluxo de trabalho.
+ 2: configurar as tarefas para cada etapa
+ 3: automatizar o processo e criar modelos através de ferramentas que adicionam outros modelos de IA para processar os dados
+  
